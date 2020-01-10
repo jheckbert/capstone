@@ -1,0 +1,15 @@
+.header {
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    &__title {
+        font-size: 3rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+}

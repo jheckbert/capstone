@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana&display=swap');
+
+.rate-presentation {
+  background-color: yellow;
+}
+
+.results {
+    margin-left: 36px;
+    margin-right: 36px; 
+
+  &__intro {
+    font-size: 2rem;
+    margin-left: 36px;
+    margin-right: 36px; 
+  }  
+
+  &__intro-para {
+    font-size: 2rem;
+    margin-left: 36px;
+    margin-right: 36px; 
+  }
+
+  &__tips {
+    font-size: 1.5rem;
+    margin-left: 36px;
+    margin-right: 36px; 
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  &__tips-highlight {
+    background-color: palegoldenrod;
+  }
+
+  &__tips-lowlight {
+    background-color: paleturquoise;
+  }
+
+  &__offer-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+
+  }
+
+  &__mopolo-offer {
+    box-sizing: border-box;
+    width: 45%;
+    height: 15rem;
+    margin-right: 15px;
+  }
+
+  &__mopolo-desc {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 19px;
+}
+
+&__mopolo-disc {
+    margin-top: 17px;
+    margin-left: 41px;
+    margin-right: 5px;
+    font-size: 16px;
+  
+}
+  &__mopolo-link {
+    margin-left: 16%;
+  }
+
+  &__apply-now-desc {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+&__apply-now-box {
+  box-sizing: border-box;
+  width: 45%;
+  height: 15rem;
+  margin-left: 15px;
+}
+
+&__apply-now-offer {
+  text-decoration: none;
+  position: relative;
+  top: 2rem;
+  padding-left: 5rem;
+  font-weight: bold;
+  width: 250px;
+  margin-left: 20%;
+  background-color: #379c37;
+  color: white;
+  font-size: 32px;
+  height: 7rem;
+  border-radius: 10px;
+  margin-top: -30px;
+}
+&__apply-now-button {
+    text-decoration: none;
+    position: relative;
+    top: 2rem;
+    font-weight: bold;
+    color: white;
+}
+&__apply-now-disc {
+  margin-top: 46px;
+  margin-left: 41px;
+  margin-right: 5px;
+  font-size: 16px;
+    
+  }
+
+}
