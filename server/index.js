@@ -5,6 +5,7 @@ const cors = require('cors');
 const sgMail = require('@sendgrid/mail');
 const replace = require('replace-in-file');
 const lineByLine = require('n-readlines');
+const dotenv = require('dotenv').config();
 
 
 // import the data file
@@ -18,6 +19,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
+
+const PORT = process.env.PORT || 7400; 
 
 app.post('/analyze', (req, res) => {
     analyzeData(req.body);
@@ -263,7 +266,7 @@ function addRateRange(setIntRangeGroup) {
 }
 
 function sendEmail(inpEmail, intRateRange) {
-    sgMail.setApiKey(sg_apikey);
+    sgMail.setApiKey(process.env.SG_APIKEY);
     const msg = {
     to: `${inpEmail}`,
     from: 'jheckbert@angelmortgage.ca',
@@ -275,5 +278,5 @@ function sendEmail(inpEmail, intRateRange) {
 };
 
 app.listen(7400, res => {
-    console.log('The server is listening on port 7400');
+    console.log(`The server is listening on port ${PORT}`);
 })
